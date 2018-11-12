@@ -19,13 +19,13 @@ public class ConcreteSubject implements Subject {
 	}
 	
 	public void setNews(String news){
-		notifyObserver();	
+		notifyObserver();
 	}
 	
 	public void notifyObserver(){
 			for(Observer obj : observers)
 			{
-			obj.update();
+				obj.update();
 			}
 	}
 	
